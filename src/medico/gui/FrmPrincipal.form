@@ -3,7 +3,7 @@
 <Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="0"/>
-    <Property name="title" type="java.lang.String" value="Consult&#xf3;rio M&#xe9;dico Dr. Paulo Sergio"/>
+    <Property name="title" type="java.lang.String" value="Consult&#xf3;rio M&#xe9;dico Dr. Exemplo"/>
     <Property name="name" type="java.lang.String" value="frmPrincipal" noResource="true"/>
   </Properties>
   <SyntheticProperties>
