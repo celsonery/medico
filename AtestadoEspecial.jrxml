@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AtestadoEspecial" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27141517-9eb2-4a5f-b154-f19edf27b030">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="579"/>
+	<parameter name="tels" class="java.lang.String"/>
+	<parameter name="paciente" class="java.lang.String"/>
+	<parameter name="endereco" class="java.lang.String"/>
+	<parameter name="prescricao" class="java.lang.String"/>
+	<parameter name="data" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="169" splitType="Stretch">
+			<staticText>
+				<reportElement x="89" y="0" width="197" height="15" uuid="c243b037-7d2e-462c-b884-1f56234d20b8"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RECEITUÁRIO CONTROLE ESPECIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="79" width="167" height="18" uuid="e76c48d4-0d56-444b-9b3a-5f8bc5ebf906"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Rua Exemplo, 99]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="23" width="167" height="20" uuid="a8a61866-dc69-49a0-be00-d795f6eae78c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAÇÃO DO EMITENTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="97" width="167" height="18" uuid="40fd6d81-611d-4976-9e5b-6fca0c7c87db"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Bairro - CEP: 99999-000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="61" width="167" height="18" uuid="813ceebf-84bc-4a1f-85ac-8f787019697a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[CNPJ: 99.999.999/0001-00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="43" width="167" height="18" uuid="6bf5353f-77a0-4d8e-add6-88e274605a9f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Nome da Clinica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="115" width="167" height="18" uuid="e76cbbb4-bf6e-4616-940c-1bb23a640d98"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Rio de Janeiro - RJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="38" width="172" height="15" uuid="c30a6b03-4c53-4675-8bd3-6ed46b4bfb19"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[2ª Via orientação ao Paciente]]></text>
+			</staticText>
+			<line>
+				<reportElement x="218" y="121" width="168" height="1" uuid="c0bcf8ee-2a75-4df0-a32d-19ce0f3a616c"/>
+			</line>
+			<staticText>
+				<reportElement x="249" y="121" width="111" height="20" uuid="f9917a70-1592-4ddc-b833-1aec4e9c0071"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARIMBO DO MÉDICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="23" width="172" height="15" uuid="567e195f-68cf-4fba-9d42-1ab209eb2db4"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[1ª Via retençãp na Farmácia ou Drograria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="133" width="167" height="18" uuid="c6b01f01-8bfe-49e6-83a7-825577709249"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="509" y="0" width="197" height="15" uuid="f2a36356-23bd-4afa-bef5-8e307a6c1953"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RECEITUÁRIO CONTROLE ESPECIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="616" y="38" width="172" height="15" uuid="6a9368e9-8c9e-4287-ab92-4bc28d3bb931"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[2ª Via orientação ao Paciente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="616" y="23" width="172" height="15" uuid="0abb68b9-891f-427f-b710-f45862650f33"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[1ª Via retençãp na Farmácia ou Drograria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="79" width="167" height="18" uuid="7e0d33d0-d0a1-4307-b07a-2a6a19dccbe2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Rua Exemplo, 99]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="61" width="167" height="18" uuid="f5802342-bfaf-40f0-8caa-447518f4e522"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[CNPJ: 99.999.999/0001-00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="133" width="167" height="18" uuid="cce239b2-c00b-40b6-84eb-dd45e7bcddfe"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="97" width="167" height="18" uuid="a5b29d3a-64c5-4e88-b98b-50845f98110d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Bairro - CEP: 99999-000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="43" width="167" height="18" uuid="bea161e3-506e-400e-89b2-fa8e11013a9f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Nome da Clinica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="115" width="167" height="18" uuid="d9ddb0b5-6d8f-47bf-b55b-2478ec5778e1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<text><![CDATA[Rio de Janeiro - RJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="23" width="167" height="20" uuid="6611f84d-6aca-4dcc-81d4-82363889dcb9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAÇÃO DO EMITENTE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="621" y="122" width="168" height="1" uuid="6a1bb903-7a37-4b86-9861-01fb9d953409"/>
+			</line>
+			<staticText>
+				<reportElement x="652" y="122" width="111" height="20" uuid="4c6b92de-901d-49fb-a583-9e59cbd1069e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARIMBO DO MÉDICO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="11" y="133" width="165" height="18" uuid="9fbfe6a1-5c7e-40ca-bda9-88a58709c045"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tels}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="418" y="133" width="167" height="18" uuid="2a9d687a-a8f3-4aea-93dd-382283fc8d56"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brush Script MT" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tels}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="3" width="53" height="11" uuid="5fd08e61-fdb0-4baf-8146-d15689d14f19"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Paciente:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="25" width="53" height="11" uuid="eea9625e-b043-4d33-9716-b70080c6f33a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Prescrição:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="14" width="53" height="11" uuid="90a9fe1e-b0e9-427e-bad4-9ff420bd1f35"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="25" width="53" height="11" uuid="8cc150c6-cb4f-49cb-908c-eb0d53f2bb24"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Prescrição:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="14" width="53" height="11" uuid="31cbda93-ec0d-4a07-a3bf-d87961ed662d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="3" width="53" height="11" uuid="01042453-b5ec-411f-8c52-82f5e25966fc"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Paciente:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="3" width="321" height="11" uuid="64c41328-d56b-4d1d-915f-4df7792696ab"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paciente}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="471" y="3" width="321" height="11" uuid="abc60687-62ea-4500-aeb8-a4a3def82b24"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paciente}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="14" width="321" height="11" uuid="1b303b97-ca4a-4c40-b8e2-04e4f7e43c21"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{endereco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="471" y="14" width="321" height="11" uuid="c5bcbd82-49c8-4cb9-8630-8f067f0707c8"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{endereco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="25" y="41" width="360" height="17" uuid="96ccc4a5-7f82-4ff7-bfcd-b10b9e81b1aa"/>
+				<textFieldExpression><![CDATA[$P{prescricao}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="434" y="41" width="358" height="17" uuid="ecd2d6ad-6bd9-49f7-865b-e5d618171b97"/>
+				<textFieldExpression><![CDATA[$P{prescricao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="79" splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="230" splitType="Stretch">
+			<staticText>
+				<reportElement x="6" y="37" width="191" height="19" uuid="74e25bb2-0e36-4ced-8fa3-1aea6cdc21c5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAÇÃO DO COMPRADOR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="169" y="180" width="28" height="1" uuid="5eb30938-b287-4641-9ec3-a9d2eb055ea3"/>
+			</line>
+			<staticText>
+				<reportElement x="9" y="172" width="27" height="10" uuid="6aae2d00-2091-4dfd-a760-0394141fb45e"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="6" y="157" width="191" height="1" uuid="6a1c9777-e6c0-4d0d-81ee-8d7b0dd5db73"/>
+			</line>
+			<staticText>
+				<reportElement x="9" y="127" width="16" height="11" uuid="a1e96a94-432e-4696-88e4-5466057b64df"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[End.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="196" width="30" height="10" uuid="4aacbe1f-d2b0-4927-a611-105a432f8422"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="205" width="183" height="20" uuid="91250f24-1f21-4bf7-a597-e1a9701fa2e8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Data ____ /_____/_____]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="107" width="20" height="10" uuid="b0edf2f1-1f3e-460c-9216-e50d4d9d2d5c"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Ident.:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="39" y="181" width="112" height="1" uuid="c6c8349f-81bd-42f1-a2f1-fc3a81df7ec6"/>
+			</line>
+			<line>
+				<reportElement x="42" y="74" width="155" height="1" uuid="a4fd3b39-164c-42f7-983d-5f7d62a641df"/>
+			</line>
+			<staticText>
+				<reportElement x="211" y="163" width="183" height="19" uuid="ae29b6b8-6aea-4a08-b939-d0be9fb37106"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ASSINATURA DO FARMACÊUTICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="37" width="183" height="20" uuid="90c6730d-ecc6-4f1b-b5ee-e0be8201c2a4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAÇÃO DO FORNECEDOR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="29" y="135" width="168" height="1" uuid="52094073-1b32-4fdb-b586-6ca8d7954895"/>
+			</line>
+			<staticText>
+				<reportElement x="9" y="67" width="23" height="11" uuid="e7c1f0d9-6953-4493-91c0-c776089a417b"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="6" y="93" width="191" height="1" uuid="3b7d3013-8815-4248-bfb3-df66af586dab"/>
+			</line>
+			<line>
+				<reportElement x="42" y="205" width="155" height="1" uuid="aca579a4-0999-4e22-96cc-8e2ce66e7e7a"/>
+			</line>
+			<rectangle>
+				<reportElement mode="Transparent" x="6" y="56" width="191" height="169" uuid="b65d056d-b1c3-4420-b546-eb90c7a48313"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="211" y="57" width="183" height="168" uuid="c70b12fe-2673-4711-9277-05618c746619"/>
+			</rectangle>
+			<line>
+				<reportElement x="154" y="114" width="43" height="1" uuid="ca0af14e-3b69-4686-bb79-ba89de25f8c7"/>
+			</line>
+			<staticText>
+				<reportElement x="157" y="171" width="10" height="11" uuid="bd8ec697-8564-49ce-8871-da9c32e8c8c8"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="106" width="45" height="10" uuid="0d4f55e5-ebcc-4553-98c2-91ca54ef2ba2"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Org. Emissor:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="33" y="114" width="69" height="1" uuid="08842d9d-2274-441b-a407-8fe735de8f7f"/>
+			</line>
+			<staticText>
+				<reportElement x="55" y="18" width="34" height="16" uuid="c960163b-576c-4204-aa40-1de5af93b0c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="18" width="111" height="19" uuid="22897a98-6194-4e97-841e-91841e9344ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ASSINATURA DO MÉDICO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="225" y="17" width="160" height="1" uuid="853f20ca-d800-4885-99a0-a2dd4eb889b8"/>
+			</line>
+			<line>
+				<reportElement x="411" y="92" width="191" height="1" uuid="5fec9e39-8131-40bf-9fb2-38cf49966901"/>
+			</line>
+			<staticText>
+				<reportElement x="511" y="105" width="45" height="10" uuid="e172bf7a-6e2c-443d-91a2-36423ed6b53f"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Org. Emissor:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="171" width="27" height="10" uuid="741132f7-5dc6-4034-b76a-5201ad87ade4"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="106" width="20" height="10" uuid="29a02a45-66f8-4c32-b945-38143a6eb035"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Ident.:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="444" y="180" width="112" height="1" uuid="7c336425-a1d3-4a66-97a9-d1076897ecaa"/>
+			</line>
+			<rectangle>
+				<reportElement mode="Transparent" x="411" y="55" width="191" height="169" uuid="2f1be285-6ab9-4f1f-92cd-4155f6f79e45"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="652" y="17" width="111" height="19" uuid="7b0f6582-34af-45aa-a19d-d27bee8bf38d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ASSINATURA DO MÉDICO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="411" y="156" width="191" height="1" uuid="439a20b8-2a89-4965-a39e-ddcf97497ec6"/>
+			</line>
+			<staticText>
+				<reportElement x="414" y="66" width="23" height="11" uuid="fbee3ed6-1a3d-4e21-aabc-e91d5edffb6f"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="612" y="162" width="183" height="19" uuid="ce40ce06-4603-4050-bea9-8acfab6b2ec0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ASSINATURA DO FARMACÊUTICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="612" y="36" width="183" height="20" uuid="ef4c09a5-91d8-46b6-bb19-1c7a44b6d35a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAÇÃO DO FORNECEDOR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="612" y="56" width="183" height="168" uuid="7b5ff947-8682-4a6d-93e7-9e5f8321c641"/>
+			</rectangle>
+			<line>
+				<reportElement x="434" y="134" width="168" height="1" uuid="24bfa622-d33c-4e43-ac5c-8cc406dca09a"/>
+			</line>
+			<staticText>
+				<reportElement x="612" y="204" width="183" height="20" uuid="f506e966-00bf-4efb-8560-7ec6765544cd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Data ____ /_____/_____]]></text>
+			</staticText>
+			<line>
+				<reportElement x="447" y="73" width="155" height="1" uuid="2deee540-981b-4316-82cf-01130fbd4075"/>
+			</line>
+			<line>
+				<reportElement x="574" y="179" width="28" height="1" uuid="10f01235-2701-47c3-a6bf-26ecc6da5a11"/>
+			</line>
+			<staticText>
+				<reportElement x="460" y="17" width="34" height="16" uuid="2be41c07-be4b-4c56-83a1-96dc496b2902"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="562" y="170" width="10" height="11" uuid="94e1d70a-a1a7-4383-8402-3370e2f4c670"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="195" width="30" height="10" uuid="7dafb662-1869-42c2-83af-5f6ab09f00e9"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="126" width="16" height="11" uuid="585779a2-9bb8-416b-9464-e4c0f5e3490a"/>
+				<textElement verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[End.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="36" width="191" height="19" uuid="d2b4a119-39ad-41a1-a903-1f1dfde277cc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAÇÃO DO COMPRADOR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="444" y="206" width="155" height="1" uuid="b5584ce7-359f-4164-9ad1-caba6fff9563"/>
+			</line>
+			<line>
+				<reportElement x="556" y="115" width="43" height="1" uuid="3d899861-a095-472a-8907-e20ca547e620"/>
+			</line>
+			<line>
+				<reportElement x="628" y="16" width="160" height="1" uuid="d1ed2409-edd7-49c2-aa4a-946b945a2966"/>
+			</line>
+			<line>
+				<reportElement x="437" y="113" width="69" height="1" uuid="b8bf4567-b777-4a37-9e68-95c66f5d9528"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="25" y="0" width="92" height="16" uuid="4cbaf346-294e-4586-bea9-d8e9d70fdb97"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="430" y="0" width="95" height="16" uuid="f36f09c4-af54-465d-a483-0f1c774f60d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

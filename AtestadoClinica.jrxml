@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AtestadoClinica" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="07c3c77c-bcd1-4604-8b38-25ec0ba459c1">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="end" class="java.lang.String"/>
+	<parameter name="tels" class="java.lang.String"/>
+	<parameter name="atestado" class="java.lang.String"/>
+	<parameter name="esp" class="java.lang.String"/>
+	<parameter name="data" class="java.lang.String"/>
+	<parameter name="consulta" class="java.lang.String"/>
+	<parameter name="paciente" class="java.lang.String"/>
+	<field name="nome" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="50" uuid="5446fc41-e135-45b5-8899-32fbad9006c3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brush Script MT" size="36"/>
+				</textElement>
+				<text><![CDATA[Nome da Clinica]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="72" width="555" height="1" uuid="e8d05e66-0209-49d2-8f6f-0da017bae026"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="50" width="301" height="20" uuid="840be0f9-3980-477b-910f-4607f20b24f9"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{end}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="311" y="50" width="244" height="20" uuid="bdc839c7-5d2e-41cd-af69-789843dd87be"/>
+				<textFieldExpression><![CDATA[$P{tels}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="116" y="36" width="293" height="14" uuid="e28f2bdc-998d-48f2-8b87-c3643ddad0b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Não atendemos Urgência ou Emergência]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="671">
+			<line>
+				<reportElement x="146" y="0" width="1" height="671" uuid="fbeecf9c-82a8-4531-85b8-be5fa218f1d3"/>
+			</line>
+			<textField>
+				<reportElement x="159" y="61" width="378" height="530" uuid="e04922ec-2b67-4622-912b-6bbd547d57b2"/>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$P{atestado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="12" width="139" height="659" uuid="97622d2d-6c7d-436f-967e-91b03a2afca6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{esp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="626" width="117" height="20" uuid="a81e9ef9-d5ba-4560-a0cb-d272574d178f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{data}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="159" y="24" width="378" height="37" uuid="c59de5ae-e0c4-44f5-a635-d7f41e4d86a7"/>
+				<textFieldExpression><![CDATA[$P{paciente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="105" height="12" uuid="45c2c164-8ba8-4d42-9d3e-415b40d486a9"/>
+				<text><![CDATA[PRÓXIMA CONSULTA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="12" width="177" height="31" uuid="bb7c4fcc-1014-41a1-a16b-6af7959ed453"/>
+				<textFieldExpression><![CDATA[$P{consulta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AtestadoMedico" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="04069243-21e9-490e-b66d-ea416db5c339">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="end" class="java.lang.String"/>
+	<parameter name="tels" class="java.lang.String"/>
+	<parameter name="text" class="java.lang.String"/>
+	<parameter name="data" class="java.lang.String"/>
+	<parameter name="consulta" class="java.lang.String"/>
+	<parameter name="paciente" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="47" uuid="d0b078a4-24b2-4dec-90ba-1600f0e2b6eb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brush Script MT" size="36"/>
+				</textElement>
+				<text><![CDATA[Dr. Exemplo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="47" width="555" height="13" uuid="958be90c-cf5e-435a-ac00-509f6de3349a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[CRM: 99-99999-7]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="60" width="555" height="16" uuid="197202c4-bc64-4414-8e4e-97df3c14e6c7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{end}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="75" width="555" height="20" uuid="bf6cf4ec-08c5-41e6-8568-bc45fe92213c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{tels}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="653" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="e4efbb6b-a4b8-43fa-9bc8-795dad455d3d"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="24" y="54" width="519" height="566" uuid="edd9862e-4859-47cf-a85a-31d2fdb38e6f"/>
+				<textFieldExpression><![CDATA[$P{text}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="620" width="117" height="20" uuid="bfd9eb2a-6df3-4391-bf9c-e2e16e06da32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{data}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="24" y="24" width="519" height="30" uuid="2ffdd855-92ac-4ffb-b02f-e69bab279533"/>
+				<textFieldExpression><![CDATA[$P{paciente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="33" splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="104" height="13" uuid="e4987a33-3978-4bf0-ba43-dd4a6786388b"/>
+				<text><![CDATA[PRÓXIMA CONSULTA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="13" width="195" height="41" uuid="62b945ff-7ba1-48ab-bd15-ccf0a8e66802"/>
+				<textFieldExpression><![CDATA[$P{consulta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
