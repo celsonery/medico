@@ -1,6 +1,6 @@
 # Programa médico.
 
-Programa criado para geração de receituras médicos
+Programa criado para geração de receituários e atestados médicos
 
 ## Screenshots
 
@@ -20,8 +20,14 @@ Programa criado para geração de receituras médicos
 
 
 ## Descrição
-- Projeto criado utilizando netbeans
+- Projeto criado utilizando NetBeans
 - Banco de dados criado em SQLite3 ( mas pode ser com MySQl/MariaDB)
+
+## Observações
+> Este projeto não está mais em desenvolvimento, sendo utilizando somente para consulta
+> Fique a vontade para copiar alterar e distribuir.
+
+## Licença MIT
 
 
 ---
