@@ -28,7 +28,7 @@ Programa criado para geração de receituários e atestados médicos
 > Fique a vontade para copiar alterar e distribuir.
 
 ## Licença MIT
-
+Licença MIT [MIT License](LICENSE)
 
 ---
 Criado em 2015
